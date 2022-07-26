@@ -45,7 +45,7 @@ h1 {
     padding-top: 10px;  
     display: block;  
    }
-input[type="Submit"]
+input[type="number"]
 {
     background-color: rgb(117, 17, 17);
     color: white;
@@ -55,7 +55,7 @@ input[type="Submit"]
     cursor: pointer;
     width: 450px;
 }
-input[type="Submit"]:hover{
+input[type="submit"]:hover{
     background-color:rgb(244, 8, 8);
 }
 fieldset{
@@ -68,4 +68,3 @@ fieldset{
 .text {  
     display: inline-block;  
     margin: 5px 20px 5px 8px;; }
-    

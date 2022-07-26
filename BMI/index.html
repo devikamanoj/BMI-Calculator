@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Body Mass Index Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="JavaScript.js"></script>
+
 </head>
 <body>
     <div class="container">
-        <form action="" method="get">
+        <form class="" id="form" >
             <h1 class="mainheading"> BMI CALCULATOR </h1>
             <br>
             <p>
                 Age:
-                <input type="number" required name="age" placeholder="00" required>
+                <input type="number" id="age" required name="age" placeholder="00" required>
             </p>
             <p>
                 <fieldset>
@@ -30,8 +30,9 @@
                 Weight(kg):
                 <input type="number" name="weight" id="weight" required>
             </p>
-            <input type="Submit" value="Calculate">
+            <input type="submit" value="Calculate">
         </form>
     </div>
 </body>
+<script src="JavaScript.js"></script>
 </html>
