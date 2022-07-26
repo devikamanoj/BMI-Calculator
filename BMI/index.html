@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="mainheading"> BMI CALCULATOR </h1>
+            <br>
+            <p>
+                Age:
+                <input type="number" required name="age" placeholder="00" required>
+            </p>
+            <p>
+                <fieldset>
+                    Male <input type="radio" name="gender" id = "male" value="M" required> Female <input type="radio" name="gender" id = "Female" value="F" required>
+                </fieldset>
+            </p>
+            <p>
+                Height (cm):
+                <input type="number" name="height" id="height" required>
+            </p>
+            <p>
+                Weight(kg):
+                <input type="number" name="weight" id="weight" required>
+            </p>
+            <input type="Submit" value="Calculate">
+        </form>
+    </div>
+</body>
+</html>
