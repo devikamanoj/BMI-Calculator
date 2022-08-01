@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Body Mass Index Calculator</title>
-    <link rel="stylesheet" href="style.css">
 
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <form class="" id="form" >
-            <h1 class="mainheading"> BMI CALCULATOR </h1>
-            <br>
-            <p>
-                Age:
-                <input type="number" id="age" required name="age" placeholder="00" required>
-            </p>
-            <p>
-                <fieldset>
-                    Male <input type="radio" name="gender" id = "male" value="M" required> Female <input type="radio" name="gender" id = "Female" value="F" required>
-                </fieldset>
-            </p>
-            <p>
-                Height (cm):
-                <input type="number" name="height" id="height" required>
-            </p>
-            <p>
-                Weight(kg):
-                <input type="number" name="weight" id="weight" required>
-            </p>
-            <input type="submit" value="Calculate">
-        </form>
+  <h3>BMI CALCULATOR</h3>
+  <form class="form" id="form" onsubmit="return validateForm()">
+    <div class="row-one">
+      <input type="text" class="text-input" id="age" autocomplete="off" required />
+      <p class="text">Age</p>
+      <label class="container">
+        <input type="radio" name="radio" id="female">
+        <p class="text">Female</p>
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="radio" name="radio" id="male">
+        <p class="text">Male</p>
+        <span class="checkmark"></span>
+      </label>
     </div>
+
+    <div class="row-two">
+      <input type="text" class="text-input" id="height" autocomplete="off" required>
+      <p class="text">Height (cm)</p>
+      <input type="text" class="text-input" id="weight" autocomplete="off" required>
+      <p class="text">Weight (kg)</p>
+    </div>
+    <button type="button" id="submit">Calculate</button>
+  </form>
 </body>
 <script src="JavaScript.js"></script>
+
 </html>
